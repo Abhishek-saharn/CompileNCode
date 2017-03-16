@@ -1,0 +1,57 @@
+<% layout('layout') -%>
+   <div class="container">
+      <div class="row row-content">
+          <div class=""col-xs-12 col-sm-6>
+              <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"  >
+                    <a href="#c" aria-controls="c"
+                     role="tab" data-toggle="tab" id = "ansi_c" onclick="myfunc()" >C</a></li>
+                    <li role="presentation"><a href="#cpp"
+                     aria-controls="cpp" role="tab"
+                     data-toggle="tab" id = "cpp_11" onclick="myfunc()">C++</a></li>
+                    <li role="presentation"><a href="#java"
+                     aria-controls="java" role="tab"
+                     data-toggle="tab" id = "java__" onclick="myfunc()">JAVA</a></li>
+                    <li role="presentation"><a href="#python"
+                     aria-controls="python" role="tab"
+                     data-toggle="tab" id = "python__" onclick="myfunc()">Python</a></li>
+             </ul>
+
+         <div class="tab-content">
+
+            <div  id="editor">
+            </div>
+            <div role="tabpanel" class="tab-pane fade in active" id="c" value="C">
+                  <button class="btn btn-success" id="ansicmaxcode" onclick="myfunc()">Max. of two</button>
+          <button class="btn btn-success" id="ansicswapcode" onclick="myfunc()">Swap numbers</button>
+
+            </div>
+           <div role="tabpanel" class="tab-pane fade " id="cpp" value="CPP">
+           </div>
+            <div role="tabpanel" class="tab-pane fade " id="java" value="JAVA">
+            </div>
+            <div role="tabpanel" class="tab-pane fade " id="python" value="PYTHON">
+            </div>
+         </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+              <h3>Output:</h3>
+              <h5 id="output-container"></h5>
+          </div>
+          <button class="btn btn-primary" onclick="compile()">Compile</button>
+           <button class="btn btn-primary" onclick="run()">Run</button>
+          <button class="btn btn-primary" onclick="saveTextAsFile()">Download Code</button>
+
+      </div>
+
+
+         <script src="/src/ace.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="/js/editorscript.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+
+
+    </body>
+</html>
