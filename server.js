@@ -17,7 +17,7 @@ app.engine('ejs',engine);
 app.set('view engine', 'ejs');
 var userRoutes = require('./routes/user');
 app.use(userRoutes);
-app.listen(3000,function(err){
+app.listen(process.env.PORT||3000,function(err){
   if(err) throw err;
   console.log("server is running at port " + secret.port);
 });
